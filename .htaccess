@@ -1,0 +1,10 @@
+ErrorDocument 403 "<html><head><script>window.location = 'https://' + window.location.hostname + window.location.pathname;</script><noscript><h1>Forbidden Error</h1><p>... or you may need to turn javascript on and type https:// in the url</p></noscript></head></html>"
+SSLRequireSSL
+AuthName "Restricted Access"
+AuthType Kerberos
+Krb5Keytab  /etc/krb5.keytab
+KrbAuthRealms RMIT.INTERNAL
+KrbMethodNegotiate Off
+KrbMethodK5Passwd On
+KrbVerifyKDC off
+require user s3656436@RMIT.INTERNAL s3541316@RMIT.INTERNAL e54061@RMIT.INTERNAL e04128@RMIT.INTERNAL e69042@RMIT.INTERNAL e09755@RMIT.INTERNAL e09962@RMIT.INTERNAL e02764@RMIT.INTERNAL e59474@RMIT.INTERNAL e87149@RMIT.INTERNAL e15309@RMIT.INTERNAL e17820@RMIT.INTERNAL e19560@RMIT.INTERNAL e18300@RMIT.INTERNAL e46991@RMIT.INTERNAL e28355@RMIT.INTERNAL e16545@RMIT.INTERNAL e18123@RMIT.INTERNAL e57478@RMIT.INTERNAL e35783@RMIT.INTERNAL e84899@RMIT.INTERNAL e05051@RMIT.INTERNAL e22896@RMIT.INTERNAL
